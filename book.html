@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wash N' Go</title>
+    <title>Book Appointment</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -18,12 +18,35 @@
             <a href="about.html">About Us</a>
         </div>
 
-        <div class="form">
-            <form>
-                Date<input type="date" id="date"><br><br>
+        <div class="card-3">
+            <div class="class-body">
+                <div class="form-3">
+                    <form>
+                        Date<br><input type="date" id="date"><br><br>
 
-                Time <input type="time" id="time">
-            </form>
+                        Time<br><input type="time" id="time"><br><br>
+
+                        Vehicle type<br>
+                            <select id="type" name="type">
+                                <option value="200">Bikes</option>
+                                <option value="500">Saloon</option>
+                                <option value="800">Vans/Matatus</option>
+                                <option value="1000">Lorries</option>
+                                <option value="2000">Trucks</option>
+                            </select><br><br>
+
+                        Area to be cleaned<br>
+                        <select id="area" name="area">
+                            <option value="200">Internal</option>
+                            <option value="100">External</option>
+                            <option value="125">Engine</option>
+                            <option value="150">General</option>
+                        </select><br><br>
+
+                        <button type="submit" id="book">Book</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="jquery-3.4.1.js"></script>

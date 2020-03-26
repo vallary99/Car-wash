@@ -19,26 +19,19 @@
 }
 
 .navbar a:hover {
-    background-color: slategrey;
+    background-color: blue;
     color: white;
 }
   
 .navbar a:active {
-    background-color: slategrey;
+    background-color: blue;
 }
 
-.card1{
+.card-1{
     width: 50%;
     margin-left: 350px;
-    margin-top: 50px;
     border: 1pt solid black;
-}
-
-.card2{
-    width: 60%;
-    margin-left: 250px;
-    margin-top: 50px;
-    border: 1pt solid black;
+    background: none;
 }
 
 .form-1{
@@ -46,8 +39,27 @@
     margin-left: 200px;
 }
 
+.card-2{
+    width: 60%;
+    margin-left: 250px;
+    border: 1pt solid black;
+    background: none;
+}
+
 .form-2{
     margin-top: 80px;
+}
+
+.card-3{
+    width: 60%;
+    margin-left: 250px;
+    border: 1pt solid black;
+    background: none;
+}
+
+.form-3{
+    margin-top: 30px;
+    margin-left: 300px;
 }
 
 .one{
@@ -73,10 +85,17 @@
     color: blue;
 }
 
+#book{
+    color: blue;
+    width: 100px;
+    margin-left: 400px;
+}
+
 input{
     border: 1pt solid black;
     width: 250px;
 }
-input{
+
+option{
     width: 250px;
 }
