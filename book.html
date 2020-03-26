@@ -21,7 +21,7 @@
         <div class="card-3">
             <div class="class-body">
                 <div class="form-3">
-                    <form>
+                    <form name="cForm" onsubmit="bookAppointment()" method="POST">
                         Date<br><input type="date" id="date" required><br><br>
 
                         Time<br><input type="time" id="time" required><br><br>
@@ -44,6 +44,8 @@
                         </select><br><br>
 
                         <button type="submit" id="book">Book</button>
+
+                        <button type="reset" id="cancel">Cancel</button>
                     </form>
                 </div>
             </div>
