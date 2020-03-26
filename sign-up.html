@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="sign-up.html">Create Account</a>
+            <a href="book.html">Book Appointment</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+        </div>
+        
+        <div class="card2">
+            <div class="card-body">
+                <div class="form-2">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="one">
+                                    First Name <br><input id="first" type="text" required><br><br>
+
+                                    Last Name <br><input id="last" type="text" required><br><br>
+
+                                    Phone No.<br><input id="phone" type="tel" required valid><br><br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="two">
+                                    E-mail <br><input id="email" type="email" required><br><br>
+                                    
+                                    Password <br><input id="password" type="password" required><br><br>
+
+                                    Confirm Password <br><input id="confirm" type="password" required valid><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                            <a href="index.html"><button type="submit" id="submit" onclick="validation()">SUBMIT</button></a>
+                            <button type="reset" id="reset">RESET</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
