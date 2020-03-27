@@ -2,20 +2,57 @@
 <html lang="en">
 <head>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="sign-up.html">Create Account</a>
-            <a href="book.html">Book Appointment</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
+
+
+    <nav class="nav-wrapper blue "> <!--Find a suitable color -->
+        <div class="container">
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons ">menu</i>
+          </a>
+          <ul class="hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sign-up.html">Create Account</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+            <li><a href="services.html">Services</a> </li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+      
+          
+          <div id="sidenav ">
+            <ul class=" sidenav rightgrey lighten-2 " id="mobile-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sign-up.html">Create Account</a></li>
+              <li><a href="book.html">Book Appointment</a></li>
+              <li><a href="services.html">Services</a> </li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
           </div>
-    </div>
+          </div>
+        </div>
+      </nav>
+       
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.materialboxe') .materialbox();
+    $('.parallax') .parallax();
+
+  });
+</script>
+
+
 </body>
 </html>

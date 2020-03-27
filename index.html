@@ -1,46 +1,206 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Home-Wash N' Go</title>
+</head>
+<body>  
+<style>
+  header{
+    background: url(img/background1.jpg);
+    background-position:center;
+    background-size:cover;
+    min-height: 1000px;
+   
+  }
+
+  @media screen and(max-width: 670px) {
+    header{
+      min-height: 500px;
+    }    
+  }
+</style>
 </head>
 <body>
-  <div class="container-fluid">
 
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="sign-up.html">Create Account</a>
-      <a href="book.html">Book Appointment</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About Us</a>
-    </div>
 
-    <div class="card-1">
-      <div class="card-body">
-          <div class="form-1">
-              <form name="cForm" onsubmit="logIn()" method="POST">
-        
-                  E-mail <br><input id="mail" type="email" required><br><br>
-    
-                  Password <br><input id="password1" type="password" required><br><br>
-    
-                  <button id="login" type="submit">LOGIN</button><br><br>
-              </form>
-    
-              Not registered?
-              <a href="sign-up.html"><button id="reg" type="submit">Create Account</button></a>
-          
-          </div>
+  
+<!-- header -->
+<header>
+  <nav class="nav-wrapper transparent ">
+    <div class="container">
+      <a href="index.html" class="brand-logo position fixed"> Wash N' Go</a> <!--add Website icon -->
+      <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+      </a>
+      <div class="#">
+        <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
+          <li><a href="index.html"> Home</a> </li>
+          <li><a href="sign-up.html"> Create Account </a> </li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
       </div>
+      <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
+        <li><a href="index.html"> Home</a> </li>
+        <li><a href="sign-up.html"> Create Account </a> </li>
+        <li><a href="book.html">Book Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+  
+    </div>
+  </nav>
+       
+</header>
+
+<br>
+
+<!--PhotoGrid-->
+<h2 class="container align-text center bold indigo-text text-darken-3">OUR SERVICES </h2>
+<section class="container section" id="photos">
+  <div class="row">
+    <div class="col s12 l4 offset-l1">
+      <img src="img/fullbody.jpg" alt="" class="responsive-img">
+    </div>
+    <div class="col s12 l6 ">
+      <h2 class="indigo-text text-darken-3">Full Body Wash </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
+         Dolorem quas quod culpa possimus officiis.</p>
+    </div>
+    <br>
+  </div>
+  <div class="row ">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/engine.jpg" alt="" class="responsive-img">
+    </div>
+    <div class="col s12 l6 pull-l4 ">
+      <h2 class="indigo-text text-darken-3"> Engine Wash </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
+         Dolorem quas quod culpa possimus officiis.</p>
     </div>
   </div>
+  <br>
+  <div class="row">
+    <div class="col s12 l4 offset-l1">
+      <img src="img/interior.jpg" alt="" class="responsive-img">
+    </div>
+    <div class="col s12 l6 ">
+      <h2 class="indigo-text text-darken-3 ">Interior Cleaning</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
+         Dolorem quas quod culpa possimus officiis.</p>
+    </div>
+  </div>
+</section>
+
+<br>
+<!--Parallax-->
+
+<h2 class="container indigo-text align-text center "> Why Choose Us</h2>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/paral2.jpg" alt="" class="responsive-img">
+    </div>
+</div>
+
+<div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
+    nam eum doloribus minus commodi voluptate, harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
+    nam eum doloribus minus commodi voluptate, harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.
+    </p
+></div>
+
+<br>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="img/paral1.jpg" alt="" class="responsive-img">
+    </div>
+</div>
+
+
+<br>
+
+
+<!--Forms-->
+<div class="card-1">
+  <div class="card-body">
+      <div class="form-1">
+          <form name="cForm" onsubmit="logIn()" method="POST">
+    
+              E-mail <br><input id="mail" type="email" required><br>
+
+              Password <br><input id="password1" type="password" required><br><br>
+
+              <button id="login" type="submit">LOGIN</button><br><br>
+          </form>
+
+          Not registered?
+          <a href="sign-up.html"><button id="reg" type="submit">Create Account</button></a>
+      
+      </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+
+<!--Get Started Button-->
+<div class="container center-align ">
+    <a href="book.html" class=" btn deep-purple lighten-1 waves-effect waves-light">Get Started</a>
+</div>
+
+<br>
+
+
+
+<!--Footer-->
+<footer class="page-footer grey darken-3">
+<div class="container">
+    <div class="row">
+        <div class="col s12 l6 align-left">
+            <h5>Contact Us</h5>
+            <ul>
+                <li><a href="#"> Facebook</a></li>
+                <li><a href="#"> Phone</a></li>
+                <li><a href="#"> Instagram</a></li>
+                <li><a href="#"> whatsapp</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="copyright-footer grey darken-4">
+    <div class="container center-align">&copy; 2020 Wash N' Go</div>
+</div>
+</footer>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxe') .materialbox();
+      $('.parallax') .parallax()
+
+    });
+  </script>
 </body>
 </html>
-
-
 
 
 
