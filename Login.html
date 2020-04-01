@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+</head>
+<body>
+<!--Navbar-->
+<header>
+    <nav class="nav-wrapper blue lighten-2 ">
+      <div class="container">
+        <a href="index.html" class="brand-logo position fixed"> Wash N' Go</a> <!--add Website icon -->
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <div class="#">
+          <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
+            <li><a href="index.html"> Home</a> </li>
+            <li><a href="#Create"> Create Account </a> </li>
+            <li><a href="#Login"> Login </a> </li>
+            <li><a href="book.html">Book Appointment</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#Contact">Get In Touch</a></li>
+          </ul>
+        </div>
+        <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
+          <li><a href="index.html"> Home</a> </li>
+          <li><a href="sign-up.html"> Create Account </a> </li>
+          <li><a href="Login.html"> Login </a> </li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Get In Touch</a></li>
+        </ul>
+    
+      </div>
+    </nav>
+
+<!--Login Form-->
+<form name="cForm" onsubmit="logIn()" method="POST">
+E-mail <br><input id="mail" type="email" required><br>   
+Password <br><input id="password1" type="password" required><br><br>
+<button id="login" type="submit">LOGIN</button><br><br>
+</form> 
+
+
+
+<br>
+
+
+
+<!--Footer-->
+<footer class="page-footer grey darken-3 scrollspy" id="Contact">
+<div class="container">
+    <div class="row">
+        <div class="col s12 l6 align-left">
+            <h5>Contact Us</h5>
+            <ul>
+                <li><a href="#"> Facebook</a></li>
+                <li><a href="#"> Phone</a></li>
+                <li><a href="#"> Instagram</a></li>
+                <li><a href="#"> whatsapp</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="copyright-footer grey darken-4">
+    <div class="container center-align">&copy; 2020 Wash N' Go</div>
+</div>
+</footer>
+
+
+
+<!--JavaScript -->
+   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
+
+<script src="jquery-3.4.1.js"></script> 
+<script src="script.js"></script> 
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxe') .materialbox();
+        $('.parallax') .parallax();
+    
+    });
+    </script>
+</body>
+</html>

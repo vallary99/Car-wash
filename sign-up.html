@@ -2,57 +2,119 @@
 <html lang="en">
 <head>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
 </head>
 <body>
-    <div class="container-fluid">
+<!--Navbar-->
+<header>
+<nav class="nav-wrapper blue lighten-2 ">
+  <div class="container">
+    <a href="index.html" class="brand-logo position fixed"> Wash N' Go</a> <!--add Website icon -->
+    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+      <i class="material-icons">menu</i>
+    </a>
+  <div class="#">
+    <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
+      <li><a href="index.html"> Home</a> </li>
+      <li><a href="#Login"> Login </a> </li>
+      <li><a href="book.html">Book Appointment</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#Contact">Get In Touch</a></li>
+    </ul>
+  </div>
+  <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
+    <li><a href="index.html"> Home</a> </li>
+    <li><a href="sign-up.html"> Create Account </a> </li>
+    <li><a href="Login.html"> Login </a> </li>
+    <li><a href="book.html">Book Appointment</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">Get In Touch</a></li>
+  </ul>
 
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="sign-up.html">Create Account</a>
-            <a href="book.html">Book Appointment</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
+  </div>
+</nav>
+
+
+<!--Main Body-->
+<form name="cForm" onsubmit="createAccount()" method="POST">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="one">
+                First Name <br><input id="first" type="text" required><br><br>
+
+                Last Name <br><input id="last" type="text" required><br><br>
+
+                Phone No.<br><input id="phone" type="tel" required valid><br><br>
+            </div>
         </div>
-        
-        <div class="card-2">
-            <div class="card-body">
-                <div class="form-2">
-                    <form name="cForm" onsubmit="createAccount()" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="one">
-                                    First Name <br><input id="first" type="text" required><br><br>
 
-                                    Last Name <br><input id="last" type="text" required><br><br>
+        <div class="col-md-6">
+            <div class="two">
+                E-mail <br><input id="email" type="email" required><br><br>
+                
+                Password <br><input id="password" type="password" required><br><br>
 
-                                    Phone No.<br><input id="phone" type="tel" required valid><br><br>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="two">
-                                    E-mail <br><input id="email" type="email" required><br><br>
-                                    
-                                    Password <br><input id="password" type="password" required><br><br>
-
-                                    Confirm Password <br><input id="confirm" type="password" required valid><br><br>
-                                </div>
-                            </div>
-                        </div>
-
-                            <a href="index.html"><button type="submit" id="submit" onclick="validation()">SUBMIT</button></a>
-                            <button type="reset" id="reset">RESET</button>
-                    </form>
-                </div>
+                Confirm Password <br><input id="confirm" type="password" required valid><br><br>
             </div>
         </div>
     </div>
 
-    <script src="jquery-3.4.1.js"></script>
-    <script src="js/script.js"></script>
+<div class="container">
+  <div class="center-align ">  
+    <div class="btn  blue lighten-2 waves-effect waves-light">    
+      <a href="index.html"><button type="submit" id="submit" onclick="validation()">SUBMIT</button></a>
+      <button type="reset" id="reset">RESET</button>
+    </div>  
+  </div>
+</div>
+       
+</form>
+
+
+<!--Footer-->
+<footer class="page-footer grey darken-3 scrollspy" id="Contact">
+  <div class="container">
+      <div class="row">
+          <div class="col s12 l6 align-left">
+              <h5>Contact Us</h5>
+              <ul>
+                  <li><a href="#"> Facebook</a></li>
+                  <li><a href="#"> Phone</a></li>
+                  <li><a href="#"> Instagram</a></li>
+                  <li><a href="#"> whatsapp</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-footer grey darken-4">
+      <div class="container center-align">&copy; 2020 Wash N' Go</div>
+  </div>
+  </footer>
+  
+
+        
+
+   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
+
+<script src="jquery-3.4.1.js"></script> 
+<script src="script.js"></script> 
+
+<script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxe') .materialbox();
+      $('.parallax') .parallax();
+  
+    });
+  </script>
 </body>
 </html>
