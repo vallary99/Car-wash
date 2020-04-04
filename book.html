@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,87 +12,126 @@
     <title>Book Appointment</title>
 </head>
 <body>
-
-    <nav class="nav-wrapper blue lighten-2 "> <!--Find a suitable color -->
-        <div class="container">
-          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons ">menu</i>
-          </a>
-          <div class="#">
-            <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
-              <li><a href="index.html"> Home</a> </li>
-              <li><a href="#Create"> Create Account </a> </li>
-              <li><a href="#Login"> Login </a> </li>
-              <li><a href="book.html">Book Appointment</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#Contact">Get In Touch</a></li>
-            </ul>
-          </div>
-          <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
-            <li><a href="index.html"> Home</a> </li>
-            <li><a href="sign-up.html"> Create Account </a> </li>
-            <li><a href="Login.html"> Login </a> </li>
-            <li><a href="book.html">Book Appointment</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">Get In Touch</a></li>
-          </ul>
-          </div>
+ 
+<!-- header -->
+<header >
+  <nav class="nav-wrapper blue-grey lighten-2">
+    <div class="container">
+      <a href="index.html" class="brand-logo position fixed"> Wash N' Go</a> <!--add Website icon -->
+      <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+      </a>
+        <!--Logo-->
+        <a href="index.html" class="brand-logo position hide-on-med-and-up fixed"> Wash N' Go</a>
+        <div class="row">
+          <div class="col l12">          
           </div>
         </div>
-      </nav>
-   
-
-        <div class="card-3">
-            <div class="class-body">
-                <div class="form-3">
-                    <form name="cForm" onsubmit="bookAppointment()" method="POST">
-                        Date<br><input type="date" id="date" required><br><br>
-
-                        Time<br><input type="time" id="time" required><br><br>
-
-                        Vehicle type<br>
-                            <select id="type" name="type">
-                                <option value="200">Bikes</option>
-                                <option value="500">Saloon</option>
-                                <option value="800">Vans/Matatus</option>
-                                <option value="1000">Lorries</option>
-                                <option value="2000">Trucks</option>
-                            </select><br><br>
-
-                        Area to be cleaned<br>
-                        <select id="area" name="area">
-                            <option value="200">Internal</option>
-                            <option value="100">External</option>
-                            <option value="125">Engine</option>
-                            <option value="150">General</option>
-                        </select><br><br>
-
-                        <button type="submit" id="book">Book</button>
-
-                        <button type="reset" id="cancel">Cancel</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+      <div class="#">
+        <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
+          <li><a href="index.html"> Home</a> </li>
+          <li><a href="sign-up.html"> Create Account </a> </li>
+          <li><a href="Login.html"> Login </a> </li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Services</a></li> 
+          <li><a href="about.html">Get In Touch</a></li> 
+        </ul>
+      </div>
+      <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
+        <li><a href="index.html"> Home</a> </li>
+        <li><a href="sign-up.html"> Create Account </a> </li>
+        <li><a href="Login.html"> Login </a> </li>
+        <li><a href="book.html">Book Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Services</a></li>
+        <li><a href="about.html">Get In Touch</a></li>
+      </ul>
+  
     </div>
+  </nav>
+       
+</header>
 
-        
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
 
-    <script src="jquery-3.4.1.js"></script> 
-    <script src="script.js"></script> 
 
-    <script>
-        $(document).ready(function(){
-          $('.sidenav').sidenav();
-          $('.materialboxe') .materialbox();
-          $('.parallax') .parallax();
-      
-        });
-      </script>
+<!--Form-->
+<section class="container ">
+  <div class="center">    
+    <form name="cForm" onsubmit="bookAppointment()" method="POST">
+    Date<br><input type="date" id="date" required><br><br>
+
+    Time<br><input type="time" id="time" required><br><br>
+
+    Vehicle type<br>
+        <select id="type" name="type">
+            <option value="200" data-icon="img/bike.jpg" class="responsive-img">Bike</option>
+            <option value="500" data-icon="img/saloon.jpg" class="responsive-img">Saloon Cars </option>
+            <option value="800" data-icon="img/van.jpg" class="responsive-img">Vans/Matatus</option>
+            <option value="1000" data-icon="img/lorries.jpg" class="responsive-img">Lorries</option>
+            <option value="2000" data-icon="img/trucks.jpg" class="responsive-img">Trucks</option>
+        </select><br><br>
+
+    Area to be cleaned<br>
+    <select id="area" name="area">
+        <option value="200">Internal</option>
+        <option value="100">External</option>
+        <option value="125">Engine</option>
+        <option value="150">General</option>
+    </select><br><br>
+
+  
+    <a href="" type="submit" id="book" class="btn blue lighten-2 waves-effect waves-light"> Book</a>
+    <a href="" type="reset" id="cancel" class="btn blue lighten-2 waves-effect waves-light"> Cancel </a>
+  
+    </form> 
+  </div> 
+  
+  
+</section>
+
+
+
+</div>
+
+
+<!--Footer-->
+<footer class="page-footer blue-grey lighten-2 scrollspy" id="Contact">
+  <div class="container">
+      <div class="row">
+          <div class="col s12 l6 align-left">
+              <h5>Contact Us</h5>
+              <ul>
+                  <li><a href="#"> Facebook</a></li>
+                  <li><a href="#"> Phone</a></li>
+                  <li><a href="#"> Instagram</a></li>
+                  <li><a href="#"> whatsapp</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-footer grey darken-4">
+      <div class="container center-align">&copy; 2020 Wash N' Go</div>
+  </div>
+</footer>
+  
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
+
+<script src="jquery-3.4.1.js"></script> 
+<script src="script.js"></script> 
+
+<script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxe') .materialbox();
+      $('.parallax') .parallax();
+      $('.dropdwon-trigger').dropdown();
+      $('select').formSelect();
+  
+    });
+  </script>
 </body>
 </html>
-

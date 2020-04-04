@@ -10,37 +10,45 @@
     <title>Create Account</title>
 </head>
 <body>
-<!--Navbar-->
-<header>
-<nav class="nav-wrapper blue lighten-2 ">
-  <div class="container">
-    <a href="index.html" class="brand-logo position fixed"> Wash N' Go</a> <!--add Website icon -->
-    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-      <i class="material-icons">menu</i>
-    </a>
-  <div class="#">
-    <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
-      <li><a href="index.html"> Home</a> </li>
-      <li><a href="#Login"> Login </a> </li>
-      <li><a href="book.html">Book Appointment</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="#Contact">Get In Touch</a></li>
-    </ul>
-  </div>
-  <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
-    <li><a href="index.html"> Home</a> </li>
-    <li><a href="sign-up.html"> Create Account </a> </li>
-    <li><a href="Login.html"> Login </a> </li>
-    <li><a href="book.html">Book Appointment</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">Get In Touch</a></li>
-  </ul>
-
-  </div>
-</nav>
-
+ 
+<!-- header -->
+<header class="">
+  <nav class="nav-wrapper blue-grey lighten-2">
+    <div class="container">
+      <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+      </a>
+      <!--Logo-->
+      <div class="row">
+        <div class="col l12"> 
+          <a href="index.html" class="brand-logo position "> Wash N' Go</a>        
+        </div>
+      </div>
+      <div class="#">
+        <ul class="right hide-on-med-and-down ">
+          <li><a href="index.html"> Home</a> </li>
+          <li><a href="sign-up.html"> Create Account </a> </li>
+          <li><a href="Login.html"> Login </a> </li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Services</a></li> 
+          <li><a href="about.html">Get In Touch</a></li> 
+        </ul>
+      </div>
+      <ul class="sidenav grey lighten-2 indigo-text text-darken-3" id="mobile-menu">
+        <li><a href="index.html"> Home</a> </li>
+        <li><a href="sign-up.html"> Create Account </a> </li>
+        <li><a href="Login.html"> Login </a> </li>
+        <li><a href="book.html">Book Appointment</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Services</a></li>
+        <li><a href="about.html">Get In Touch</a></li>
+      </ul>
+  
+    </div>
+  </nav>
+       
+</header>
 
 <!--Main Body-->
 <form name="cForm" onsubmit="createAccount()" method="POST">
@@ -67,11 +75,9 @@
     </div>
 
 <div class="container">
-  <div class="center-align ">  
-    <div class="btn  blue lighten-2 waves-effect waves-light">    
-      <a href="index.html"><button type="submit" id="submit" onclick="validation()">SUBMIT</button></a>
-      <button type="reset" id="reset">RESET</button>
-    </div>  
+  <div class="center-align ">      
+      <a href="#"  type="submit" id="submit" onclick="validation()" class="btn  blue lighten-2 waves-effect waves-light"> SUBMIT</a>
+      <button type="reset" class="btn  blue lighten-2 waves-effect waves-light" id="reset">RESET</button> 
   </div>
 </div>
        
@@ -79,7 +85,7 @@
 
 
 <!--Footer-->
-<footer class="page-footer grey darken-3 scrollspy" id="Contact">
+<footer class="page-footer blue-grey lighten-1scrollspy" id="Contact">
   <div class="container">
       <div class="row">
           <div class="col s12 l6 align-left">
