@@ -21,7 +21,7 @@
     min-height: 1000px;
    
   }
-
+  
 
   @media screen and(max-width: 670px) {
     header{
@@ -46,6 +46,7 @@
           <div class="col l12">          
           </div>
         </div>
+
       <div class="#">
         <ul class="right hide-on-med-and-down  indigo-text text-darken-3">
           <li><a href="index.html"> Home</a> </li>
@@ -75,43 +76,60 @@
 <br>
 
 <!--PhotoGrid-->
-<h2 class="container align-text center bold indigo-text text-darken-3">OUR SERVICES </h2>
-<section class="container section" id="photos">
+<h2  class="container align-text center bold indigo-text text-darken-3">OUR SERVICES </h2>
+<section class="container  center section" id="photos">
   <div class="row">
-    <div class="col s12 l4 offset-l1">
-      <img src="img/fullbody.jpg" alt="" class="responsive-img">
+    <div class="card  v-align col left hoverable  s12 m4 l3 left offset-l2 ">
+      <div class=" card-image  waves-effect waves-block waves-light">
+        <img src="img/fullbody.jpg" alt="washing the engine of a car" class="activator">
+      </div>
+      <div class="card-content">
+        <span class=" card-title activator indigo-text text-darken-3">Full Body + Engine Wash <i class="material-icons right">more_vert</i></span>
+        <p class="indigo-text text-darken-3 center"> 750 Ksh</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title indigo-text text-darken-4"> FullBody + Engine  <i class="material-icons right">close</i> </span>
+        <p>This is whereby you car will be cleaned from the inside together with the engine and also the outside of the car. we use a vaccum cleaner to remove all the dust in between your seats.</p>
+      </div>
     </div>
-    <div class="col s12 l6 ">
-      <h2 class="indigo-text text-darken-3">Full Body Wash </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
-         Dolorem quas quod culpa possimus officiis.</p>
+ 
+
+    <div class="card hoverable offset-m1-l2 col s12 m4 l3 left ">
+      <div class=" card-image  waves-effect waves-block waves-light">
+        <img src="img/Engine2.jpg" alt="full body wash for the car" class="activator">
+      </div>
+      <div class="card-content">
+        <span class=" card-title activator indigo-text text-darken-3">Full Body Wash <i class="material-icons right">more_vert</i></span>
+        <p class="indigo-text text-darken-3 center">500 Ksh</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title indigo-text text-darken-4"> FullBody Wash <i class="material-icons right">close</i> </span>
+        <p> This is whereby the car will be washed it's exterior only using a pressure machine to get your car sparlking clean and an envy to your friends</p>
+      </div>
     </div>
-    <br>
-  </div>
-  <div class="row ">
-    <div class="col s12 l4 push-l6 offset-l1">
-      <img src="img/engine.jpg" alt="" class="responsive-img">
+
+
+
+    <div class="card hoverable offset-m1-l2 col s12 m4 l3 left ">
+      <div class=" card-image  waves-effect waves-block waves-light">
+        <img src="img/interior.jpg" alt="interior wash of the car" class="activator">
+      </div>
+      <div class="card-content">
+        <span class=" card-title activator indigo-text text-darken-3">Interior wash <i class="material-icons right">more_vert</i></span>
+        <p class="indigo-text text-darken-3 center"> 250 Ksh</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title indigo-text text-darken-4">Interior wash  <i class="material-icons right">close</i> </span>
+        <p>This is whereby you car will be cleaned from thse inside together with the engine and also the outside of the car. we use a vaccum cleaner to remove all the dust in between your seats.
+          We also remove the seats temporarily to clean the bottom of the seat making your car as clean as you bought it.
+          Our employees also make sure that your car boot is clean leaving it looking spick and span.</p>
+      </div>
     </div>
-    <div class="col s12 l6 pull-l4 ">
-      <h2 class="indigo-text text-darken-3"> Engine Wash </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
-         Dolorem quas quod culpa possimus officiis.</p>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col s12 l4 offset-l1">
-      <img src="img/interior.jpg" alt="" class="responsive-img">
-    </div>
-    <div class="col s12 l6 ">
-      <h2 class="indigo-text text-darken-3 ">Interior Cleaning</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
-         Dolorem quas quod culpa possimus officiis.<p><a href="about.html" class="blue-text text-lighten-2 waves-effect waves-light"> Learn More</a></p></p>
-    </div>
+
   </div>
 </section>
 
-<br>
+
 <!--Parallax-->
 
 <h2 class="container  indigo-text align-text center "> Why Choose Us</h2>
@@ -131,11 +149,23 @@
 ></div>
 
 <br>
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="img/paral1.jpg" alt="" class="responsive-img">
+<!--Carousel-->
+<section class="container">   
+  <div class=" carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect"> Get Started</a>
     </div>
-</div>
+    <div class="carousel-item " href="#one!">
+      <p>Welcome </p>
+      <a href=""><img src="img/paral3.jpg" alt=""></a>
+    </div>
+    <div class="carousel-item " href="#two!">
+      <p>Welcome </p>
+      <a href=""><img src="img/paral4.jpg" alt=""></a>
+    </div>
+  </div>
+</section>
+
 
 
 <br>
@@ -145,56 +175,61 @@
 <!--learn more about us -->
 
 <section class="container section Scrollspy " id="About Us"> >
-  <div class="row">
-    <div class="col s12 l4"> <h2 class="blue-text text-lighten-2 "> About Us</h2>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
-                harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
-                harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
-                Dolorem quas quod culpa possimus officiis.<p><a href="about.html" class=" btn  waves-effect waves-light"> Learn More</a></p></p>
-    </div>
-
-    <div class="scrollspy"  id="Login">    
-      <div class="col s12 l6  scrollspy offset-l2" >
-      <ul class="tabs">
-        <li class="tab col s6">
-          <a href="#" class="blue-text text-lighten-2" >lOGIN</a> 
-        </li>
-        <li class="tab col s6">
-          <a href="#" class="blue-text text-lighten-2">Create Account</a> 
-        </li>
-      </ul>
-      <div class="col s12">
-        <p class="flow-text blue-text text-lighten-2"> LOGIN</p>
-        <form name="cForm" onsubmit="logIn()" method="POST">
-  
-          E-mail <br><input id="mail" type="email" required><br>
-          
-          Password <br><input id="password1" type="password" required><br><br>
-          
-          <button id="login" type="submit">LOGIN</button><br><br>
-        </form> 
-
-          
+  <div class="row">      
+      <div class="col card hoverable center s12 l4"> 
+        <h2 class="blue-text text-lighten-2 "> About Us</h2>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
+          harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse inventore laboriosam quibusdam labore eveniet,
+          harum odit? Dolorem facilis atque optio nulla soluta. Aspernatur, dolore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at dolor repellendus, tempora dolores fugiat molestias aut perferendis placeat commodi odit animi facere voluptatum.
+          Dolorem quas quod culpa possimus officiis.<p><a href="about.html" class=" btn  waves-effect waves-light"> Learn More</a></p></p>
       </div>
-      <div class="col s12 scrollspy" id="Create">
-        <p class="flow-text blue-text text-lighten-2"> Create Account</p>
-        <div class="col s12" >
+      <div class="col s12 l6 card hoverable offset-l2"> 
+        <ul class="tabs">
+          <li class=" tab col s6">
+            <a href="#login" class="indigo-text"> LOGIN</a>
+          </li>
+          <li class=" tab col s6">
+            <a href="#create" class="indigo-text"> CREATE  ACCOUNT </a>
+          </li>
+        </ul>
+        
+        <!--Login Form-->
+        <div class="col s12" id="login">
+          <p class="flow-text">Login</p>
+          <form name="cForm" onsubmit="logIn()" method="POST">
+  
+            E-mail <br><input id="mail" type="email" required><br>
+            
+            Password <br><input id="password1" type="password" required><br><br>
+            
+            <button id="login" type="submit">LOGIN</button><br><br>
+          </form> 
+        </div>
+
+        <!--Create Account form-->
+        <div class="col s12" id="create">
+          <p class="flow-text">Ceate an account</p>
           <h2 class="blue-text text-lighten-2"> Not registered?</h2>
           <a href="sign-up.html"><button id="reg" type="submit">Create Account</button></a>
-        </div>   
+        </div>
       </div>
-    </div>
   </div>
 
-
-    </div>
-  </div>
 </section>
 
 
-<br>
+<!--Locate us -->   <!--change location-->
+<div class="card hoverable s12 l4 ">  
+  <h2 class="center indigo-text text-darken-4">How to Find us...</h2>    
+  <iframe id="image"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510564.6498664422!2d36.56720029142611!3d-1.3031933719272915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1583270469772!5m2!1sen!2ske"
+    width="100%" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe>
+</div>
+
+
 
 
 <!--Get Started Button -->
@@ -208,25 +243,19 @@
 
 <!--Footer-->
 <footer class="page-footer blue-grey lighten-2 scrollspy" id="Contact">
-<div class="container">
-    <div class="row">
-        <div class="col s12 l6 align-left">
-            <h5>Contact Us</h5>
-            <ul>
-                <li><a href="#"> Facebook</a></li>
-                <li><a href="#"> Phone</a></li>
-                <li><a href="#"> Instagram</a></li>
-                <li><a href="#"> whatsapp</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<nav class="nav-wrapper transparent ">
+  <div class="container">
+    <ul class="center col s12 l6">
+      <li><a href="#" class=" tooltipped btn-floating btn-small" data-tooltip="Find Us on Instagram"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" class=" tooltipped btn-floating btn-small" data-tooltip="Find Us On Facebook"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#" class=" tooltipped btn-floating btn-small" data-tooltip="Find Us on Twitter"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </div>
+</nav>
 <div class="copyright-footer grey darken-4">
     <div class="container center-align">&copy; 2020 Wash N' Go</div>
 </div>
 </footer>
-
-
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -238,6 +267,10 @@
     $('.parallax') .parallax()
     $('.tabs').tabs();
     $('.scrollspy') .scrollSpy();
+    $('.carousel').carousel();
+    $('.pushpin').pushpin();
+    $('.tooltipped') .tooltip();
+    
 
   });
 </script>
